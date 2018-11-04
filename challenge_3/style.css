@@ -1,0 +1,89 @@
+html {
+  background: linear-gradient(188deg, #CCFFFF, #FFCCCC);
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* header */
+.image {
+    width: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.caption {
+    position: relative;
+    text-align: center;
+    max-width: 95%;
+    margin: 0 auto;
+    padding-right: 0%;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 10%;
+    
+    color: white;
+    font-size: 500%;
+    filter: Alpha(opacity=5);
+}
+.caption .content {
+  position: absolute;
+  top: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  border-radius: 0px 0px 15px 15px;
+}
+
+/* cards */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 15px 15px 15px 15px;
+}
+.rounded {
+  border-radius: 15px 15px 0px 0px;
+}
+.container {
+  padding: 0 16px;
+}
+.container::after, .row::after {
+  clear: both;
+  display: table;
+}
+.title {
+  color: grey;
+}
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 16px;
+}
+.button:hover {
+  background-color: #555;
+}

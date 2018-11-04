@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<style>
+  .balls {
+    border-radius: 50%;
+    position: fixed;  
+    width: 20px;
+    height: 20px;
+    top: 60%;
+    animation-name: jump;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+    #1 {
+    background: green;
+    left: 10%;
+    animation-timing-function: cubic-bezier(0.1, 0.1, 0.444, 1.649);
+  }
+  #2 {
+    background: green;
+    left: 20%;
+    animation-timing-function: cubic-bezier(0.2, 0.2, 0.444, 1.649);
+  }
+  #3 {
+    background: green;
+    left: 30%;
+    animation-timing-function: cubic-bezier(0.3, 0.3, 0.444, 1.649);
+  }
+  #4 {
+    background: green;
+    left: 40%;
+    animation-timing-function: cubic-bezier(0.1, 0.1, 0.444, 1.649);
+  }
+  #5 {
+    background: green;
+    left: 50%;
+    animation-timing-function: cubic-bezier(0.2, 0.2, 0.444, 1.649);
+  }
+  #6 {
+    background: green;
+    left: 60%;
+    animation-timing-function: cubic-bezier(0.3, 0.3, 0.444, 1.649);
+  }
+  #7 {
+    background: green;
+    left: 70%;
+    animation-timing-function: cubic-bezier(0.1, 0.1, 0.444, 1.649);
+  }
+  #8 {
+    background: green;
+    left: 80%;
+    animation-timing-function: cubic-bezier(0.2, 0.2, 0.444, 1.649);
+  }
+  #9 {
+    background: green;
+    left: 90%;
+    animation-timing-function: cubic-bezier(0.3, 0.3, 0.444, 1.649);
+  }
+
+
+  @keyframes jump {
+    50% {
+      top: 10%;
+    }
+  }
+</style>
+<div class="balls" id="1"></div>
+<div class="balls" id="2"></div>
+<div class="balls" id="3"></div>
+<div class="balls" id="4"></div>
+<div class="balls" id="5"></div>
+<div class="balls" id="6"></div>
+<div class="balls" id="7"></div>
+<div class="balls" id="8"></div>
+<div class="balls" id="9"></div>
+
+</html>
