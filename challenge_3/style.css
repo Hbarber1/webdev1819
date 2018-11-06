@@ -1,22 +1,66 @@
 html {
-  background: linear-gradient(188deg, #CCFFFF, #FFCCCC);
+  background: linear-gradient(180deg, #CCFFFF, #FFCCCC);
   box-sizing: border-box;
-  font-family: "Times New Roman", Times, serif;
+  font-family: Trebuchet MS;
 }
+/*nav bar*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 14px;
+    text-transform: lowercase;
+    font-size: 2vw;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 14px;
+}
+
+.active {
+    background-color: rgba(204, 255, 255, 0.6);
+    border-radius: 14px;
+}
+
+
+
+
+
+
+
+
+
 
 /* header */
 .image {
-    width: 95%;
+    width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+      border-radius: 16px 16px 5px 5px;
 }
 .caption {
     position: relative;
     text-align: center;
-    max-width: 95%;
+    max-width: 100%;
     margin: 0 auto;
     padding-right: 0%;
+        font-size: 2vw;
 }
 .centered {
     position: absolute;
@@ -24,9 +68,8 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
     padding-bottom: 10%;
-    
     color: white;
-    font-size: 500%;
+
     filter: Alpha(opacity=5);
 }
 .caption .content {
@@ -36,7 +79,7 @@ html {
   background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
   color: #f1f1f1;
   width: 100%;
-  border-radius: 0px 0px 15px 15px;
+  border-radius: 16px;
 }
 
 /* cards */
@@ -58,6 +101,7 @@ html {
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 15px 15px 15px 15px;
+  background: linear-gradient(0deg, #CCFFFF, #FFCCCC);
 }
 .rounded {
   border-radius: 15px 15px 0px 0px;
@@ -86,4 +130,32 @@ html {
 }
 .button:hover {
   background-color: #555;
+}
+
+h2 {
+  font-size: 2vw;
+}
+p {
+  font-size: 1vw;
+}
+
+.three {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 1px;
+  text-align: center;
+  font-size: 30px;
+  cursor: pointer;
+  width: 25%;
+  border-radius: 16px;
+  text-transform: uppercase;
+  	background: linear-gradient(270deg, #A23940 0%, #2A2349 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font: {
+		size: 20vw;
+		family: $font;
+	};
+}
 }
