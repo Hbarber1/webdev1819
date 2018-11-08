@@ -1,0 +1,44 @@
+html {
+  font-family: Helvetica;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+h1 {
+  color: orange;
+}
+.feature {
+  color: red;
+}
+a:link {
+    text-decoration: none;
+}
+span {
+  font-size: 100%;
+  color: orange;
+}
+.main {
+  background-color: lightblue;
+      box-shadow: 3px 3px;
+        border-radius: 16px;
+        padding-left: 10px;
+}
+.noindent {
+     text-indent: -40px;
+}
+.border {
+  border-style: dotted;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.penguin-border {
+  background-image: url("http://goo.gl/e2x4ZK");
+    background-repeat: no-repeat;
+  height: 200px;
+}
+.inline {
+      display: inline;
+}
+ol {
+      list-style-type: lower-alpha;
+}
