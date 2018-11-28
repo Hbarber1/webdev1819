@@ -1,6 +1,14 @@
 body {
     background-color: #28491F;
 }
+a {
+    font-family: 'Didact Gothic';
+}
+
+
+jumbotron {
+    font-family: 'Allerta Stencil';
+}
 .nav {
     background-color: rgba(201, 209, 198, 0.2);
 }
@@ -52,6 +60,7 @@ ul {
     height: 50%;
 }
 
+
 /* cards */
 @media screen and (max-width: 650px) {
   .column {
@@ -59,25 +68,39 @@ ul {
     display: block;
   }
 }
+h2 {
+    font-family: 'Didact Gothic';
+}
 .card {
   box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.2);
   border-radius: 15px 15px 15px 15px;
   background: rgba(201, 209, 198, 0.2);
-  padding-right: 8px;
+  margin-left: 8px;
+  
 }
 .rounded {
   border-radius: 15px 15px 0px 0px;
 }
 .title {
-  color: grey;
+    color: #B9B735;
+    font-family: 'Didact Gothic';
+    font-weight: bold;
 }
 
 /* forms */
 .btn {
   background-color: #B9B735;
+  font-family: 'Allerta Stencil';
 }
 .form-control {
   background-color: #FBFBFB;
+}
+input {
+    font-family: 'Didact Gothic';
+    color: #9DA58F;
+}
+label {
+    font-family: 'Didact Gothic';
 }
 
 /* yellow-green: #B9B735
