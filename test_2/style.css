@@ -4,19 +4,19 @@ body {
 
 
 .black {
-  background-color: black;
+  background-color: rgb(16, 18, 12);
 }
 .white {
-  background-color: #ffffff;
+  background-color: white;
 }
 .yellow {
-  background-color: yellow;
+  background-color: rgb(221, 200, 71);
 }
 .red {
-  background-color: red;
+  background-color: rgb(190, 47, 34);
 }
 .blue {
-  background-color: blue;
+  background-color: rgb(25, 47, 90);
 }
 
 .right {
