@@ -1,0 +1,37 @@
+body {
+  background-color: grey;
+}
+
+
+.black {
+  background-color: black;
+}
+.white {
+  background-color: #ffffff;
+}
+.yellow {
+  background-color: yellow;
+}
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: blue;
+}
+
+.right {
+  border-right: 4px solid black;
+}
+.left {
+  border-left: 4px solid black;
+}
+.top {
+  border-top: 4px solid black;
+}
+.bottom {
+  border-bottom: 4px solid black;
+}
+
+h2 {
+  text-align: center;
+}
