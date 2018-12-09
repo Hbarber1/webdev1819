@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
+    <title></title>
+  </head>
+  <body>
+    <script>
+    var countDownDate = new Date("Dec 25, 2018 24:00:00").getTime();
+    var x = setInterval(function() {
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("time").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+          }, 1000);
+    </script>
+    
+    <div class="padding_top">
+      <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/The_Boring_Company_Logo.svg/1200px-The_Boring_Company_Logo.svg.png" alt="logo">
+    </div>
+
+    <div class="nav">
+      <ul class="nav-section">
+        <li class="nav-item">
+          <a class="nav-link active" href="#"><p>Home</p></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><p>FAQ</p></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><p>Projects</p></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><p>Jobs</p></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><p>Hat</p></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><p>More Information</p></a>
+        </li>
+      </ul>
+    </div>  
+
+    <div class="content">
+      <img class="image" src=" https://fsmedia.imgix.net/31/78/7a/6f/dc92/4a74/959a/b43918d0ca59/boring-company-flamethrower.png?rect=0%2C0%2C1500%2C751&dpr=2&auto=format%2Ccompress&w=650 " alt="Chicago">
+    </div>
+      
+    <div class="jumbotron jumbotron-fluid" style="background-color: rgba(0, 0, 0, 0.03);">
+      <div class="container" style="text-align: center;">
+        <h1>Open to public</h1>      
+        <h1 id="time"></h1>
+      </div>
+    </div>
+      
+    <div class="jumbotron" style="background-color: rgba(0, 0, 0, 0);">
+      <div class="container" style="text-align: center;">
+        <h1>Prices</h1>      
+      </div>
+    </div>
+       
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="card">
+          <div class="container">
+            <h1>Not a Flamethrower</h1>
+            <p class="title"> maybe a flamethrower</p>
+            <p>lorem ipsum ipsum lorem lorem ipsum ipsum lorem lorem ipsum ipsum lorem.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card">
+          <div class="container">
+            <h1>Fire Extinguisher</h1>
+            <p class="title">why not</p>
+            <p>lorem ipsum ipsum lorem lorem ipsum ipsum lorem lorem ipsum ipsum lorem.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card">
+          <div class="container">
+            <h1>Hat</h1>
+            <p class="title">for those with bad hair</p>
+            <p>lorem ipsum ipsum lorem lorem ipsum ipsum lorem lorem ipsum ipsum lorem.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+       
+      <br>
+      <br>
+  
+    <div class="container">
+      <h2>Comments for Boring Company</h2>
+      <form action="/action_page.php">
+        <div class="form-group">
+          <label for="name"><p>Name:</p></label>
+          <input type="name" class="form-control" id="name" placeholder="Elon Musk" name="name">
+        </div>
+        <div class="form-group">
+          <label for="email"><p>Email:</p></label>
+          <input type="email" class="form-control" id="email" placeholder="elon@muskrat.com" name="email">
+        </div>
+        <div class="form-group">
+          <label for="Q"><p>Questions/Comments:</p></label>
+          <input type="Q" class="form-control" id="Q" placeholder="cool flamethrower!" name="Q">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <br>
+  </body>
+</html>
