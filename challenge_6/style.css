@@ -3,10 +3,12 @@ body {
 }
 h1 {
     font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
-    font-size: 24px; font-style: normal; 
+    font-size: 24px; 
+    font-style: normal; 
     font-variant: normal; 
     font-weight: 700; 
     line-height: 26.4px; 
+        text-transform: lowercase;
 } 
 h3 { 
     font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
@@ -15,7 +17,6 @@ h3 {
     font-variant: normal; 
     font-weight: 700; 
     line-height: 15.4px; 
-    
 } 
 p { 
     font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
@@ -25,9 +26,13 @@ p {
     font-weight: 400; 
     line-height: 20px; 
     color: rgba(0, 0, 0, 0.6);
-    
+        text-transform: lowercase;
 } 
-
+.bruh {
+    font-size: 42px;
+    color: rgba(0, 0, 0, 0.6);
+        text-transform: lowercase;
+}
 .padding_top {
     padding-top: 0.75%;
     padding-bottom: 0.75%;
@@ -39,8 +44,6 @@ p {
     margin-right: auto;
     width: 30%;
 }
-
-
 .nav {
     background-color: white;
 }
@@ -48,8 +51,6 @@ p {
     margin-left: auto;
     margin-right: auto;
 }
-
-
 ul {
     list-style-type: none;
     overflow: hidden;
@@ -74,11 +75,10 @@ li :hover:not(.active) {
     background-color: white;
     color: black;
 }
-.active {
+.black {
     background-color: white;
-    color: black;
+    color: black !important;
 }
-
 .content {
     text-align: center;
     width: 100%;
@@ -88,8 +88,6 @@ li :hover:not(.active) {
 ul {
     height: 50%;
 }
-
-
 /* cards */
 @media screen and (max-width: 650px) {
   .column {
@@ -99,13 +97,16 @@ ul {
 }
 .container {
     padding-top: 12px;
+    margin-bottom: 12px;
+    width: 100%;
 }
-.card {
-  box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.1);
-  border-radius: 15px 15px 15px 15px;
-  background: rgba(0, 0, 0, 0.03);
+.section {
+  box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  background: /*rgba(0, 0, 0, 0.03)*/white;
   margin-left: 8px;
-  
+  text-align: center;
+  padding-bottom: 5px;
 }
 .rounded {
   border-radius: 15px 15px 0px 0px;
@@ -114,14 +115,99 @@ ul {
     color: rgba(0, 0, 0, 0.6);
     font-weight: bold;
 }
-
-/* forms */
-.btn {
-  background-color: #d67335;
+.img-col {
+    width: 100%;
+    height: auto;
+}
+.pad {
+    padding: 20px;
+}
+img {
+    width: 50%;
+    height: 50%;
 }
 .form-control {
   background-color: #FBFBFB;
 }
 input {
     color: #9DA58F;
+}
+.btn {
+    background-color:black!important;
+    border-color: black;
+}
+
+.top {
+    padding-top: 50px;
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: black;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 12px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0px;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-right: 25px;
+}
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  width: 100%;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }

@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    
+  
+    
+    
     <title></title>
   </head>
   <body>
@@ -35,7 +42,7 @@
     <div class="nav">
       <ul class="nav-section">
         <li class="nav-item">
-          <a class="nav-link active" href="#"><p>Home</p></a>
+          <a class="nav-link active" href="#"><p class="black">Home</p></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#"><p>FAQ</p></a>
@@ -56,57 +63,129 @@
     </div>  
 
     <div class="content">
-      <img class="image" src=" https://fsmedia.imgix.net/31/78/7a/6f/dc92/4a74/959a/b43918d0ca59/boring-company-flamethrower.png?rect=0%2C0%2C1500%2C751&dpr=2&auto=format%2Ccompress&w=650 " alt="Chicago">
+      <img class="image" src=" https://fsmedia.imgix.net/31/78/7a/6f/dc92/4a74/959a/b43918d0ca59/boring-company-flamethrower.png?rect=0%2C0%2C1500%2C751&dpr=2&auto=format%2Ccompress&w=650 " alt="comp">
     </div>
       
     <div class="jumbotron jumbotron-fluid" style="background-color: rgba(0, 0, 0, 0.03);">
       <div class="container" style="text-align: center;">
-        <h1>Open to public</h1>      
+        <h1>for sale in</h1>      
         <h1 id="time"></h1>
       </div>
     </div>
       
     <div class="jumbotron" style="background-color: rgba(0, 0, 0, 0);">
       <div class="container" style="text-align: center;">
-        <h1>Prices</h1>      
+        <h1 class="bruh">Prices</h1>      
       </div>
     </div>
        
     <div class="row">
       <div class="col-lg-4">
-        <div class="card">
+        <div class="section">
           <div class="container">
             <h1>Not a Flamethrower</h1>
             <p class="title"> maybe a flamethrower</p>
-            <p>lorem ipsum ipsum lorem lorem ipsum ipsum lorem lorem ipsum ipsum lorem.</p>
+            <img class="img-col pad" src=" https://i.ytimg.com/vi/_YN8UQd4PrQ/maxresdefault.jpg " alt="flame">
+            <p>-Fire extinguisher sold separately (for exorbitant amounts of money) -Taxes and shipping will be added at checkout -Additional customs fees may apply for international orders because of laws -International customers can receive a full refund if not happy with said fees -Before shipping, aspiring flamethrower aficionados will be sent a terms and conditions rhyme for review and acceptance-Starts shipping in spring -May not be used on Boring Company decorative lacquered hay bales or Boring Company dockside munitions warehouses</p>
+            <button type="button" class="btn btn-dark btn-block" disabled>Not Released</button>
           </div>
         </div>
       </div>
       <div class="col-lg-4">
-        <div class="card">
+        <div class="section">
           <div class="container">
-            <h1>Fire Extinguisher</h1>
+            <h1>Fire Extinguisher</h1> 
             <p class="title">why not</p>
-            <p>lorem ipsum ipsum lorem lorem ipsum ipsum lorem lorem ipsum ipsum lorem.</p>
+            <img class="pad" src=" https://images.offerup.com/7DK1wPbtze8h2DQpLXfhG4dl_D0=/600x800/52a1/52a14cebab9b4cd8b0b605635b9872c7.jpg " alt="noflame">
+            <p>-Buy an overpriced Boring Company fire extinguisher! -You can definitely buy one for less elsewhere. -This one comes with a cool sticker and the button is conveniently riiiight above.</p>
+            <div class="container">
+              <!-- Button to Open the Modal -->
+              <button type="button" class="btn btn-dark btn-block" data-toggle="modal" data-target="#myModal">Purchase</button>
+              <!-- The Modal -->
+              <div class="modal fade" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h1 class="modal-title">Boring Company Fire Extinguisher</h1>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      <p>Currently out of stock</p>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div class="col-lg-4">
-        <div class="card">
+        <div class="section">
           <div class="container">
             <h1>Hat</h1>
             <p class="title">for those with bad hair</p>
+            <img class="img-col pad" src=" https://i.amz.mshcdn.com/P0BPNX2xj_Eak2LcADK0R7hEOwk=/950x534/filters:quality(90)/https%3A%2F%2Fblueprint-api-production.s3.amazonaws.com%2Fuploads%2Fcard%2Fimage%2F657750%2F87a3488e-14df-4ae7-b4a9-c54c6abbbeeb.jpg " alt="hat">
             <p>lorem ipsum ipsum lorem lorem ipsum ipsum lorem lorem ipsum ipsum lorem.</p>
+          <div class="container">
+              <!-- Button to Open the Modal -->
+              <button type="button" class="btn btn-dark btn-block" data-toggle="modal" data-target="#myModal">Purchase</button>
+              <!-- The Modal -->
+              <div class="modal fade" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h1 class="modal-title">Boring Company Hat</h1>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      <p>Currently out of stock</p>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-       
-      <br>
-      <br>
   
-    <div class="container">
-      <h2>Comments for Boring Company</h2>
+    <div>
+      <div class="jumbotron" style="background-color: rgba(0, 0, 0, 0);">
+        <div class="container" style="text-align: center;">
+          <h1 class="bruh">New Projects</h1>      
+        </div>
+      </div>
+      <div style="align-self: center;">
+        <h1>O’Hare International Airport to Downtown Chicago</h1>
+        <div class="row">
+          <div class="column">
+            <img src="https://static.techspot.com/images2/news/bigimage/2018/01/2018-01-29-image-2.png" alt="pic2" style="width: 100%; height: auto;">
+          </div>
+          <div class="column">
+            <img src="https://cdn.vox-cdn.com/thumbor/igxDgJ5hx86eUg_K9jtJiudCDe8=/0x0:1200x900/920x613/filters:focal(504x354:696x546):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/60066683/C3ynX_OWcAE_DQA.0.jpg" alt="pic3" style="width: 100%; height: auto;">
+          </div>
+          <div class="column">
+            <img src="https://cdn.vox-cdn.com/thumbor/QiMweAvEuHmacOlqlXEv9C4PzTU=/0x0:1000x563/920x0/filters:focal(0x0:1000x563):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/11539945/Block_37_Station__1_.jpg" alt="pic4"  style="width: 100%; height: auto;">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+    <div class="container top">
+      <h1>Comments for Boring Company</h1>
       <form action="/action_page.php">
         <div class="form-group">
           <label for="name"><p>Name:</p></label>
@@ -120,7 +199,7 @@
           <label for="Q"><p>Questions/Comments:</p></label>
           <input type="Q" class="form-control" id="Q" placeholder="cool flamethrower!" name="Q">
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button class="button" style="vertical-align:middle"><span>submit </span></button>
       </form>
     </div>
     <br>
