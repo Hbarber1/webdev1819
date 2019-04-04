@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Canvas</title>
+</head>
+ 
+<body>
+  <canvas id="myCanvas" width="400px" height="400px" style="border: 2px solid black; background-color: lightblue;"></canvas>
+ 
+  <script>
+    var canvas = document.querySelector("#myCanvas");
+    var context = canvas.getContext("2d");
+    var gradient = context.createLinearGradient(75, 0, 325, 0);
+      gradient.addColorStop("0.0", "#DDDDDD");
+      gradient.addColorStop("0.15","#2D7BEC");
+      gradient.addColorStop("0.5", "#31FFFF");
+      gradient.addColorStop("0.85","#2D7BEC");
+      gradient.addColorStop("1.0", "#DDDDDD");
+      context.font = "bold 100px Helvetica, Arial, sans-serif";    
+      context.textAlign = "center";
+      context.fillStyle = gradient;
+      context.lineWidth =  3;
+      context.strokeText("HB", 200 + Math.random(), 225 + Math.random());
+      context.fillText("HB", 200, 225);
+
+
+
+  </script>
+  
+ 
+</body>
+ 
+</html>
