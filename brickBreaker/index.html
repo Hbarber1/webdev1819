@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Brick Breaker</title>
+        <style>
+            * {
+                padding: 0;
+                background: eee;
+            }
+            #myCanvas{
+                background-color: #eee;
+                display: block;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="myCanvas" style="width: 500px; height: 500px;"></canvas>
+        <script>
+            var canvas = document.getElementById("myCanvas");
+            var ctx = canvas.getContext("2d");
+                
+                ctx.beginPath();
+                ctx.arc(100, 100, 20, 0, Math.PI*2, false);
+                
+                ctx.fill();
+                ctx.closePath();
+
+        </script>
+    </body>
+</html>
+
