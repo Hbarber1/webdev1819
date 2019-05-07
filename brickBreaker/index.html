@@ -135,6 +135,7 @@
             		    if(bricks[c][r].status == 1) {
                 		    if (x + ballRadius >= brickX && x - ballRadius <= brickX + brickWidth && y - ballRadius >= brickY && y - ballRadius <= brickY + brickHeight){
                 			    dy = -dy;
+                			    bricks[c][r].status = 0;
                 			}
             		    }
                     }
