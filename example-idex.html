@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <style>
+            #myCanvas {
+  border: 10px solid #444;
+}
+        </style>
+        
+    </head>
+    <body>
+        
+        <div class="container">
+
+<canvas id="myCanvas" height="300px" width="400px">
+  
+</canvas>
+  
+</div>
+        
+        <script>
+        var canvas = document.querySelector("#myCanvas");
+var context = canvas.getContext("2d");
+
+var x = -100;
+var y = 170;
+
+function update() {
+context.clearRect(0, 0, canvas.width, canvas.height);
+  
+    for (var i = 0; i < positions.length; i++) {
+      var ratio = (i + 1) / positions.length;
+      
+    context.beginPath();
+    context.arc(positions[i].x, positions[i].y, 50, 0, 2 * Math.PI, true);
+    context.fillStyle = "rgba(250, 102, 110, " + ratio / 4 + ")";
+    context.fill();
+  }
+
+context.beginPath();
+context.arc(x, y, 50, 0, 2 * Math.PI, true);
+context.fillStyle = "#FF6A6A";
+context.fill();
+
+ storeLastPosition(x, y);
+  
+// update position
+if (x > 600) {
+x = -100;
+}
+x += 3;
+
+requestAnimationFrame(update);
+
+}
+
+var motionTrailLength = 20;
+var positions = [];
+
+function storeLastPosition(x, y) {
+// push an item
+positions.push({
+x: x,
+y: y
+});
+
+//get rid of first item
+if (positions.length > motionTrailLength) {
+positions.shift();
+}
+}
+
+update();
+    </script>
+
+        
+    </body>
+</html>
